@@ -1,0 +1,165 @@
+body{
+    background-color: black;
+}
+.navbar-container{
+    display: flex ;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    flex-wrap:wrap;
+    width: 100%;
+    overflow:auto;
+    border: 2px solid;
+    padding: 10px;
+    margin-top: 2.5rem;
+    box-shadow: 5px 5px #1a0000;
+    
+}
+@media screen and (max-width :640px) {
+    .navbar-container{
+        flex-direction: column;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .image-container{
+        flex-direction: column;
+        /* width: 80vw; */
+        /* width: 100%; */
+    }
+    .image-container>div{
+        /* width: 100%; */
+    }
+    img{
+        width: 100%;
+    }
+    
+  
+}
+@media screen and (min-width:640px) {
+    .image-container>div{
+        height: 60vh ;
+        width: 33.33vw;
+        border: soldi 2px white;
+    }
+    
+    img{
+        height: 100%;
+      width: 100%;
+      border-radius: inherit;
+     }
+     
+.image-container>div:hover{
+    width: 60vw;
+}
+}
+
+.navbar-links>a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+a>img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.logo{
+    height: 2rem ;
+    width: 2rem;
+    margin-left: 2rem;
+}
+.login-link{
+    margin-right: 2rem;
+}
+
+.main-container{
+    border: solid 2px white;
+    width: 100%;
+    /* border: solid ;
+    border-radius: 20px; */
+    background-color: white;
+}
+h3{
+    margin-left: 2rem;
+}
+.inner-container{
+    /* margin: 0rem 0rem; */
+    border: solid 2px white;
+    margin:2rem;
+
+    font-size: x-large;
+}
+.image-container{
+    /* border: solid 2px yellow; */
+    /* height: ; */
+    /* width: 80vw; */
+    /* margin: 2rem 2rem; */
+    display: flex;
+     border: solid ;
+    border-radius: 20px;
+    
+    
+
+}
+.heading{
+    color: darkslategray;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    top: 40%;
+    width: 10%;
+    text-align: left;
+    font-size: 1rem;
+
+}
+.heading2{
+    color: darkslategray;
+    position: absolute;
+    bottom: 10px;
+    top: 40%;
+    width: 10%;
+    text-align: center;
+    font-size: 1rem;
+
+}
+.heading3{
+    color: darkslategray;
+    position: absolute;
+    bottom: 10px;
+    top: 40%;
+    width: 10%;
+    text-align: right;
+    font-size: 1rem;
+
+}
+
+img{
+    border-radius: inherit;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+

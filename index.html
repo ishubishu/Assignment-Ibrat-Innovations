@@ -6,37 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
+    <script type="text/javascript">
+        function setNewImage(){
+            document.getElementById("img1").src="image32.webp";
+        }
+        function setOldImage(){
+            document.getElementById("img1").src="./image3.webp";
+
+        }
+        function setNewImage1(){
+            document.getElementById("img2").src="mobility2.webp";
+        }
+        function setOldImage1(){
+            document.getElementById("img2").src="./mobility.webp";
+        }
+        function setNewImage2(){
+            document.getElementById("img3").src="drills2.webp";
+        }
+        function setOldImage2(){
+            document.getElementById("img3").src="./drills.jpg";
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>
+
     <div class="navbar-container">
-        <img src="./logo.webp" alt="logo" class="logo">
+        <img src="./hf.png" alt="logo" class="logo">
         <div class="navbar-links">
-            <a href="#"><img src="./live.svg" alt=""> Live </a>
-            <a href="#"><img src="./newspaper.svg" alt=""> Membership </a>
-            <a href="#"><img src="./plan.png" alt=""> Plans</a>
-            <a href="#"><img src="./more.png" alt=""> More</a>
+            <a href="#">
+                <img src="./live.png" alt="Live"> 
+                <p style="margin:0;">LIVE </p>
+            </a>
+            <a href="#"><img src="./membership.png" alt="">
+                <p style="margin:0;"> MEMBERSHIPS </p></a>
+            <a href="#"><img src="./plan.png" alt=""><p style="margin:0;"> PLANS</p></a>
+            <a href="#"><img src="./moree.png" alt=""><p style="font-family: 'Times New Roman', Times, serif;margin:0;"> MORE</p></More></a>
         </div>
         <a href="#" class="login-link"><img src="./login.png">Login</a>
     </div>
     <div class="main-container">
         <div class="inner-container">
-           <h3>Runner's Workout</h3>
+           <h3 style="font-family: Verdana; font-weight: normal;">Runner's Workout</h3>
             <div class="image-container">
                 <div class="image-1">
-                    <img src="./girl1.jpg" alt="">
+                    <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="./image3.webp" alt="">
                     <h2 class="heading">STRENGTH</h2>
                 </div>
 
                 <div class="image-2">
-                    <img src="./image3.webp" alt="">
+                    <img  id="img2" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="./mobility.webp" alt="">
                     <h2 class="heading2">MOBILITY</h2>
                     
                 </div>
                 <div class="image-3">
-                    <img src="./girl2.jpg" alt="">
+                    <img  id="img3" onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="./drills.jpg" alt="">
                     <h2 class="heading3">DRILLS
 
                     </h2>
@@ -45,6 +71,7 @@
             </div>
         </div>
     </div>
+    
     
 
 

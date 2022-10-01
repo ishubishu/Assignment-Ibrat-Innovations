@@ -1,24 +1,29 @@
 body{
-    background-color: black;
+     margin:0px;
+    background-color: #fcf9f9;
 }
 .navbar-container{
     display: flex ;
     justify-content: space-between;
     background-color: white;
+    background-image: linear-gradient(#f1eded,white);
     align-items: center;
     flex-wrap:wrap;
     width: 100%;
     overflow:auto;
-    border: 2px solid;
-    padding: 10px;
-    margin-top: 2.5rem;
-    box-shadow: 5px 5px #1a0000;
+    border: 1px solid #dfdcdc;
+    padding: 0px;
+    margin-top: 0rem;
+    box-shadow: 5px  5px #faf8f8;
+    
     
 }
 @media screen and (max-width :640px) {
     .navbar-container{
+        
         flex-direction: column;
     }
+    
     .navbar-links{
         display: flex;
         flex-direction: column;
@@ -57,8 +62,19 @@ body{
 }
 
 .navbar-links>a{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    
+        width: 90px;
+        text-align:center;
+        display:block;
+        background-color: transparent;
+        border: 0.1px solid transparent;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        float:left;
+    
+      
+        margin-left: 1rem;
+        margin-right: 1rem;
     
 }
 a>img{
@@ -77,6 +93,7 @@ a{
 }
 .login-link{
     margin-right: 2rem;
+    
 }
 
 .main-container{
@@ -87,12 +104,12 @@ a{
     background-color: white;
 }
 h3{
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .inner-container{
     /* margin: 0rem 0rem; */
-    border: solid 2px white;
-    margin:2rem;
+    border: solid 2px white);
+    margin: 3rem;
 
     font-size: x-large;
 }
@@ -102,38 +119,38 @@ h3{
     /* width: 80vw; */
     /* margin: 2rem 2rem; */
     display: flex;
-     border: solid ;
-    border-radius: 20px;
+     border: solid  ;
+    border-radius: 10px;
     
     
 
 }
 .heading{
-    color: darkslategray;
+    color: rgb(250, 246, 246);
     position: absolute;
     bottom: 10px;
     left: 100px;
-    top: 40%;
+    top: 30%;
     width: 10%;
     text-align: left;
     font-size: 1rem;
 
 }
 .heading2{
-    color: darkslategray;
+    color: rgb(250, 252, 253);
     position: absolute;
     bottom: 10px;
-    top: 40%;
+    top: 30%;
     width: 10%;
     text-align: center;
     font-size: 1rem;
 
 }
 .heading3{
-    color: darkslategray;
+    color: white;
     position: absolute;
     bottom: 10px;
-    top: 40%;
+    top: 30%;
     width: 10%;
     text-align: right;
     font-size: 1rem;
@@ -144,22 +161,4 @@ img{
     border-radius: inherit;
 }
 /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 
